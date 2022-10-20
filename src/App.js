@@ -13,6 +13,7 @@ function App() {
     .then((response) => response.json())
     .then((data) => {
       setUserData(data);
+      console.log(data)
     })
     .catch((error) => console.log(error));
   }
@@ -21,7 +22,19 @@ function App() {
     <>
       <Header searchValue={searchValue} onChange={(e) => setSearchValue(e.target.value)} onClick={searchUser} />
       <main>
-        <Profile data={userData} />
+        {typeof userData === "undefined" 
+        ? 
+        <div className='message-container'>
+          <h1>Welcome to Github User Searcher ! Please, search an user to see the data.</h1>
+        </div>
+        : 
+        <div className={userData?.message === 'Not Found' ? 'message-container' : 'user-container'}>
+          {userData?.message === "Not Found" 
+          ?
+          <h1>User Not Found</h1>
+          :
+          <Profile data={userData} />}
+        </div>}
       </main>
     </>
   );
