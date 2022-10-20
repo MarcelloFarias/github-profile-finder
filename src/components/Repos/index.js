@@ -22,11 +22,11 @@ const Repos = ({ data }) => {
                         return (
                             <li key={index} className='repo-item'>
                                 <div className='repo-name-container'>
-                                    <a className='repo-name'>{repo?.name}</a>
+                                    <a href={repo?.html_url} className='repo-name'>{repo?.name}</a>
                                     <p>{repo?.visibility}</p>
                                 </div>
-                                <p>{repo?.description}</p>
-                                <p>{repo?.language}</p>
+                                <p className='repo-description'>{repo?.description}</p>
+                                <p className='repo-language'>{repo?.language}</p>
                             </li>
                         );
                     })}

@@ -12,5 +12,29 @@
 
 .repo-item {
     width: 90%;
-    padding: 0.6rem;
+    padding: 0.9rem;
+    background: rgba(0, 0, 0, 0.2);
+    margin: 10px 0;
+}
+
+.repo-name-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.repo-name-container p {
+    margin-left: 10px;
+}
+
+.repo-name {
+    font-size: 1.2rem;
+}
+
+.repo-description {
+    margin: 20px 0;
+}
+
+.repo-language {
+    font-size: 0.9rem;
 }
