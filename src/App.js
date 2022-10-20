@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Header from './components/Header/index.js';
 import Profile from './components/Profile/index.js';
+import Repos from './components/Repos/index.js';
 import './App.css';
 
 function App() {
@@ -33,7 +34,10 @@ function App() {
           ?
           <h1>User Not Found</h1>
           :
-          <Profile data={userData} />}
+          <>
+            <Profile data={userData} />
+            <Repos data={userData}/>
+          </>}
         </div>}
       </main>
     </>

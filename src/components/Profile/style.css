@@ -1,6 +1,9 @@
 .profile-container {
+    display: flex;
+    align-items: left;
+    flex-direction: column;
     width: 40%;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .user-avatar {

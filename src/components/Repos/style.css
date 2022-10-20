@@ -1,0 +1,16 @@
+.repos-container {
+    width: 60%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.repos-list {
+    list-style: none;
+    overflow-y: auto;
+}
+
+.repo-item {
+    width: 90%;
+    padding: 0.6rem;
+}
