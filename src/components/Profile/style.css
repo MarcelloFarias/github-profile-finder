@@ -4,6 +4,7 @@
     flex-direction: column;
     width: 40%;
     padding: 2rem;
+    color: #c9d1d9;
 }
 
 .user-avatar {
@@ -14,10 +15,19 @@
 
 .user-name {
     text-decoration: none;
-    color: #000;
+    color: #c9d1d9;
+}
+
+.user-name:hover {
+    color: #8b949e;
+}
+
+.user-login {
+    color: #8b949e;
 }
 
 .user-bio {
+    color: #c9d1d9;
     margin: 20px 0;
 }
 
@@ -28,7 +38,12 @@
 }
 
 .stat {
+    color: #c9d1d9;
     margin: 0 5px;
+}
+
+.stat span {
+    color: #8b949e;
 }
 
 .user-location {

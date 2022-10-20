@@ -10,8 +10,8 @@ const Profile = ({ data }) => {
                 <h3 className='user-login'>{data?.login}</h3>
                 <p className='user-bio' >{data?.bio}</p>
                 <div className='user-stats'>
-                    <a className='stat'>{data?.followers} followers</a>
-                    <a className='stat'>{data?.following} following</a>
+                    <a className='stat'>{data?.followers} <span>followers</span></a>
+                    <a className='stat'>{data?.following} <span>following</span></a>
                 </div>
 
                 <p className='user-location'>{data?.location}</p>

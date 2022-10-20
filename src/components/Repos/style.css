@@ -13,8 +13,8 @@
 .repo-item {
     width: 90%;
     padding: 0.9rem;
-    background: rgba(0, 0, 0, 0.2);
     margin: 10px 0;
+    border-bottom: solid 0.1px #8b949e;
 }
 
 .repo-name-container {
@@ -25,16 +25,31 @@
 
 .repo-name-container p {
     margin-left: 10px;
+    color: #8b949e;
+    border: solid 1px #8b949e;
+    font-size: 1rem;
+    padding: 0 7px;
+    border-radius: 50px;
 }
 
 .repo-name {
-    font-size: 1.2rem;
+    color: #58acff;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.repo-name:hover {
+    text-decoration: underline;
 }
 
 .repo-description {
-    margin: 20px 0;
+    font-size: 1rem;
+    margin: 10px 0;
+    color: #8b949e;
 }
 
 .repo-language {
     font-size: 0.9rem;
+    margin-top: 15px;
+    color: #8b949e;
 }
