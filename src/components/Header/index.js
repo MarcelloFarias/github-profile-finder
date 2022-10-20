@@ -6,7 +6,8 @@ const Header = () => {
         <>
             <header>
                 <h2>Github User Searcher</h2>
-                <input type='text' placeholder='Type a User Here...' />
+                <input className="input-search" type='text' placeholder='Type a User Here...' />
+                <button className="btn-search">Search</button>
             </header>
         </>
     );
