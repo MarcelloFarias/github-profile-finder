@@ -10,13 +10,17 @@ function App() {
   const [ userData, setUserData ] = useState();
 
   async function searchUser() {
-    await fetch(`https://api.github.com/users/${searchValue}`)
-    .then((response) => response.json())
-    .then((data) => {
-      setUserData(data);
-      console.log(data)
-    })
-    .catch((error) => console.log(error));
+    if(searchValue === '') {
+      alert("You must to type something !");
+    } else {
+      await fetch(`https://api.github.com/users/${searchValue}`)
+      .then((response) => response.json())
+      .then((data) => {
+        setUserData(data);
+        console.log(data)
+      })
+      .catch((error) => console.log(error));
+    }
   }
 
   return (
