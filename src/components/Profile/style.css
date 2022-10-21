@@ -19,6 +19,10 @@
 }
 
 .user-name:hover {
+    text-decoration: underline;
+}
+
+.user-name:hover {
     color: #8b949e;
 }
 
