@@ -53,3 +53,9 @@
 .user-location {
     margin: 20px 0;
 }
+
+@media (max-width: 800px) {
+    .profile-container {
+        width: 80%;
+    }
+}

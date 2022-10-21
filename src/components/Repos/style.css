@@ -53,3 +53,10 @@
     margin-top: 15px;
     color: #8b949e;
 }
+
+@media (max-width: 800px) {
+    .repos-container {
+        width: 80%;
+        height: auto;
+    }
+}
