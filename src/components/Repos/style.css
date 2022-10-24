@@ -54,6 +54,11 @@
     color: #8b949e;
 }
 
+.input-repository {
+    width: 90%;
+    border-radius: 6px;
+}
+
 @media (max-width: 800px) {
     .repos-container {
         width: 80%;

@@ -3,6 +3,7 @@ import './style.css';
 
 const Repos = ({ data }) => {
 
+    const [ searchValue, setSearchValue ] = useState('');
     const [ userRepos, setUserRepos ] = useState([]);
 
     useEffect(() => {
@@ -14,11 +15,19 @@ const Repos = ({ data }) => {
         .catch((error) => console.log(error));
     }, [userRepos, data?.login]);
 
+    function searchRepo(repo) {
+        if(repo?.name.toLowerCase().includes(searchValue.toLowerCase())) {
+            return repo;
+        }
+        return;
+    }
+
     return (
         <>
             <div className='repos-container'>
+                <input type='text' value={searchValue} className='input-search input-repository' placeholder='Find a respository...' onChange={(e) => setSearchValue(e.target.value)} />
                 <ul className='repos-list'>
-                    {userRepos.map((repo, index) => {
+                    {userRepos.filter((repo => searchRepo(repo))).map((repo, index) => {
                         return (
                             <li key={index} className='repo-item'>
                                 <div className='repo-name-container'>
