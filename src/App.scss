@@ -23,17 +23,6 @@ main {
             color: $textColor;
         }
 
-        input[type="text"] {
-            margin: 20px 0;
-            padding: 0.8rem;
-            border: 0;
-            outline: 0;
-            border-radius: 8px;
-            background: $primaryColor;
-            color: $textColor;
-            font-size: 1rem;
-        }
-
         .btn-search {
             background: $aactionColor;
             cursor: pointer;
@@ -47,14 +36,41 @@ main {
 
     .user-container {
         width: 60%;
+
+        .repo-input {
+            width: 90%;
+        }
+    }
+
+    .no-content-container {
+        display: grid;
+        place-items: center;
+        width: 60%;
+        color: $textColor;
     }
 }
 
 .btn {
-    padding: 8px;
+    padding: 0.8rem;
     border-radius: 8px;
     outline: none;
     border: none;
+    font-size: 1rem;
+}
+
+input[type="text"] {
+    margin: 20px 0;
+    padding: 0.8rem;
+    border: 0;
+    outline: 0;
+    border-radius: 8px;
+    background: $primaryColor;
+    color: $textColor;
+    font-size: 1rem;
+
+    &:focus {
+        border: solid 2px #3b71ca;
+    }
 }
 
 @media(max-width: 979px) {
@@ -63,6 +79,7 @@ main {
 
         .input-field {
             width: 90%;
+            margin-bottom: -80px;
         }
 
         .user-container {
