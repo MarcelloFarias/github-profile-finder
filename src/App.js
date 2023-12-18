@@ -3,6 +3,7 @@ import Header from './components/Header/index.js';
 import UserProfile from './components/UserProfile/index.js';
 import './App.scss';
 import RepositoriesList from './components/RepositoriesList/index.js';
+import Footer from './components/Footer/index.js';
 
 function App() {
 
@@ -34,6 +35,12 @@ function App() {
     return;
   }
 
+  const [repoSearch, setRepoSearch] = useState('');
+
+  const handleRepoSearch = (e) => {
+    setRepoSearch(e.target.value);
+  }
+ 
   return (
     <>
       <Header />
@@ -48,8 +55,8 @@ function App() {
           userData ? (
             <div className='user-container'>
               <UserProfile user={userData} />
-              <input type='text' placeholder='Find a repository...' className='repo-input'/>
-              <RepositoriesList reposUrl={reposUrl} />
+              <input value={repoSearch} onChange={handleRepoSearch} type='text' placeholder='Find a repository...' className='repo-input'/>
+              <RepositoriesList reposUrl={reposUrl} repoSearch={repoSearch} />
             </div>
           ) : (
             <div className='no-content-container'>
@@ -58,6 +65,7 @@ function App() {
           )
         }
       </main>
+      <Footer />
     </>
   );
 }

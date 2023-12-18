@@ -1,0 +1,26 @@
+$primaryColor: #0d1117;
+$secondaryColor: #21262d;
+$textColor: #c9d1d9;
+$secondaryTextColor: #848d97;
+
+.footer {
+    height: 10dvh;
+    background: $primaryColor;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2rem;
+
+    .text-field {
+        width: 70%;
+        color: $textColor;
+    }
+
+    .medias-field {
+        a {
+            color: $textColor;
+            font-size: 1.5rem;
+            margin: 0 10px;
+        }
+    }
+}

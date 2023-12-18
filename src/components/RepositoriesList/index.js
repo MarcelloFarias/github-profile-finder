@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import './style.scss';
 import RepositoryItem from "../RepositoryItem";
 
-const RepositoriesList = ({ reposUrl }) => {
+const RepositoriesList = ({ reposUrl, repoSearch }) => {
     const [repos, setRepos] = useState([]);
 
     useEffect(() => {
@@ -18,9 +18,16 @@ const RepositoriesList = ({ reposUrl }) => {
         return () => requestController.abort();
     }, [reposUrl]);
 
+    const filterRepos = (repo, searchrepoValue) => {
+        if(repo.name.toLowerCase().includes(searchrepoValue.toLowerCase())) {
+            return repo;
+        }
+        return;
+    }
+
     return (
         <ul className="repos-list">
-            {repos?.map((repo) => {
+            {repos?.filter((repo) => filterRepos(repo, repoSearch)).map((repo) => {
                 return <RepositoryItem key={repo.id} repository={repo}/>
             })}
         </ul>

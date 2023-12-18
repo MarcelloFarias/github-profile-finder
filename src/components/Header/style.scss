@@ -13,3 +13,10 @@ header {
     background: $primaryColor;
     color: $textColor;
 }
+
+@media(max-width: 768px) {
+    header {
+        justify-content: center;
+        font-size: 0.8rem;
+    }
+}
