@@ -1,48 +1,46 @@
 import React, { useState } from 'react';
 import Header from './components/Header/index.js';
-import Profile from './components/Profile/index.js';
-import Repos from './components/Repos/index.js';
-import './App.css';
+import UserProfile from './components/UserProfile/index.js';
+import './App.scss';
 
 function App() {
 
-  const [ searchValue, setSearchValue ] = useState('');
-  const [ userData, setUserData ] = useState();
+  const [searchValue, setSearchValue] = useState('');
+
+  const handleSearchValue = (e) => {
+    setSearchValue(e.target.value);
+  }
+
+  const [userData, setUserData] = useState({});
 
   async function searchUser() {
-    if(searchValue === '') {
-      alert("You must to type something !");
-    } else {
+    if(searchValue) {
       await fetch(`https://api.github.com/users/${searchValue}`)
       .then((response) => response.json())
       .then((data) => {
         setUserData(data);
-        console.log(data)
+        console.log(data);
       })
       .catch((error) => console.log(error));
+
+      setSearchValue('');
     }
+    return;
   }
 
   return (
     <>
-      <Header searchValue={searchValue} onChange={(e) => setSearchValue(e.target.value)} onClick={searchUser} />
+      <Header />
+
       <main>
-        {typeof userData === "undefined" 
-        ? 
-        <div className='message-container'>
-          <h1>Welcome to Github User Searcher ! Please, search an user to see the data.</h1>
+        <div className='input-field'>
+          <label>Search for a github user</label>
+          <input value={searchValue} onChange={handleSearchValue} type='text' placeholder='Type a github user here...' />
+          <button className='btn btn-search' onClick={() => searchUser()}>Search</button>
         </div>
-        : 
-        <div className={userData?.message === 'Not Found' ? 'message-container' : 'user-container'}>
-          {userData?.message === "Not Found" 
-          ?
-          <h1>User Not Found</h1>
-          :
-          <>
-            <Profile data={userData} />
-            <Repos data={userData}/>
-          </>}
-        </div>}
+        <div className='user-container'>
+          <UserProfile user={userData} />
+        </div>
       </main>
     </>
   );
