@@ -1,0 +1,34 @@
+$primaryColor: #0d1117;
+$secondaryColor: #21262d;
+$textColor: #c9d1d9;
+$secondaryTextColor: #848d97;
+
+.user-profile {
+    padding: 0.4rem;
+    color: #fff;
+
+    img {
+        border-radius: 50%;
+    }
+
+    h3 {
+        color: $secondaryTextColor;
+    }
+
+    .bio {
+        margin: 15px 0;
+    }
+
+    .followers {
+        display: flex;
+        align-items: center;
+
+        span {
+            color: $secondaryTextColor;
+        }
+    }
+
+    .location {
+        margin-top: 15px;
+    }
+}

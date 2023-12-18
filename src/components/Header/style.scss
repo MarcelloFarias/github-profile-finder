@@ -1,0 +1,15 @@
+$primaryColor: #0d1117;
+$secondaryColor: #21262d;
+$textColor: #c9d1d9;
+
+header {
+    min-width: 100%;
+    height: 10dvh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 0;
+    background: $primaryColor;
+    color: $textColor;
+}

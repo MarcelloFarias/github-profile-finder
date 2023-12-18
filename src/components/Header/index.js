@@ -1,15 +1,11 @@
 import React from "react";
-import './style.css';
+import './style.scss';
 
-const Header = ({ searchText, onChange, onClick }) => {
+const Header = () => {
     return (
         <>
             <header>
-                <h1>Github User Searcher</h1>
-                <div className="input-field">
-                    <input className="input-search" value={searchText} onChange={onChange} type='text' placeholder='Type an User Here...' />
-                    <button className="btn-search" onClick={onClick}>Search</button>
-                </div>
+                <h1>Github User Finder</h1>
             </header>
         </>
     );

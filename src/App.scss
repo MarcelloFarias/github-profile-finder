@@ -1,0 +1,72 @@
+$primaryColor: #0d1117;
+$secondaryColor: #21262d;
+$textColor: #c9d1d9;
+$aactionColor: #238636;
+
+main {
+    display: flex;
+    align-items: center;
+    min-height: 90dvh;
+    background: $secondaryColor;
+
+    .input-field {
+        padding: 2rem;
+        display: flex;
+        height: 60vh;
+        width: 40%;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+
+        label {
+            font-size: 2rem;
+            color: $textColor;
+        }
+
+        input[type="text"] {
+            margin: 20px 0;
+            padding: 0.8rem;
+            border: 0;
+            outline: 0;
+            border-radius: 8px;
+            background: $primaryColor;
+            color: $textColor;
+            font-size: 1rem;
+        }
+
+        .btn-search {
+            background: $aactionColor;
+            cursor: pointer;
+            color: #fff;
+
+            &:hover {
+                background: #3fb950;
+            }
+        }
+    }
+
+    .user-container {
+        width: 60%;
+    }
+}
+
+.btn {
+    padding: 8px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+}
+
+@media(max-width: 979px) {
+    main {
+        flex-direction: column;
+
+        .input-field {
+            width: 90%;
+        }
+
+        .user-container {
+            width: 90%;
+        }
+    }
+}
