@@ -1,4 +1,5 @@
 import './style.scss';
+import { LuUsers2 } from "react-icons/lu";
 
 const UserProfile = ({user}) => {
     return (
@@ -8,6 +9,7 @@ const UserProfile = ({user}) => {
             <h3>{user?.login}</h3>
             <p className='bio'>{user.bio}</p>
             <div className='followers'>
+                <LuUsers2 style={{marginRight: '10px'}} />
                 <p>{user?.followers} <span>followers</span></p>
                 <p>.</p>
                 <p>{user?.following} <span>following</span></p>

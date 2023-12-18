@@ -7,7 +7,7 @@ main {
     display: flex;
     align-items: center;
     min-height: 90dvh;
-    background: $secondaryColor;
+    background: $primaryColor;
 
     .input-field {
         padding: 2rem;
@@ -67,9 +67,10 @@ input[type="text"] {
     background: $primaryColor;
     color: $textColor;
     font-size: 1rem;
+    border: solid 1px $secondaryColor;
 
     &:focus {
-        border: solid 2px #3b71ca;
+        border: solid 1px #3b71ca;
     }
 }
 

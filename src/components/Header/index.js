@@ -1,11 +1,12 @@
 import React from "react";
 import './style.scss';
+import { FaGithub } from "react-icons/fa";
 
 const Header = () => {
     return (
         <>
             <header>
-                <h1>Github User Finder</h1>
+                <h1><FaGithub/> Github User Finder</h1>
             </header>
         </>
     );

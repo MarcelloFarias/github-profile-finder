@@ -1,6 +1,11 @@
+$primaryColor: #0d1117;
+$secondaryColor: #21262d;
+$textColor: #c9d1d9;
+$aactionColor: #238636;
+
 .repository-item {
     color: #fff;
-    border-bottom: solid 1px #fff;
+    border-bottom: solid 1px $secondaryColor;
     padding: 10px 0;
 
     .repository-name {
