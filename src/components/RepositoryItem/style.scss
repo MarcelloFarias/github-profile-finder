@@ -1,0 +1,32 @@
+.repository-item {
+    color: #fff;
+    border-bottom: solid 1px #fff;
+    padding: 10px 0;
+
+    .repository-name {
+        display: flex;
+        align-items: center;
+
+        a {
+            font-size: 1.5rem;
+            color: #3b71ca;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        span {
+            border-radius: 50px;
+            font-size: 12px;
+            margin-left: 10px;
+            border: solid 1px #fff;
+            padding: 0.2rem;
+        }
+    }
+
+    .repository-description {
+        margin: 15px 0;
+    }
+}

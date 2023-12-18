@@ -4,11 +4,13 @@ $textColor: #c9d1d9;
 $secondaryTextColor: #848d97;
 
 .user-profile {
+    height: auto;
     padding: 0.4rem;
     color: #fff;
 
     img {
         border-radius: 50%;
+        max-width: 200px;
     }
 
     h3 {
