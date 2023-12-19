@@ -6,7 +6,7 @@ https://github.com/MarcelloFarias/github-profile-finder/assets/90793123/dc3c2105
 
 Github profile finder é um projeto simples, que permite o usuário buscar dados reais sobre perfis do github via API.
 
-# 👨‍💻 Tecnologias utilizadas no projeto
+# 👨‍💻 Tecnologias utilizadas
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
@@ -42,9 +42,9 @@ npm install
 
 # 📜 Licença
 
-Distribuído sob a licença MIT. Consulte `LICENSE` para obter mais informações.
 [![Licence](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)](./LICENSE)
+Distribuído sob a licença MIT. Consulte `LICENSE` para obter mais informações.
 
 # 📫Contato
 
-Marcello Farias - [E-mail](marcellorocha632@gmail.com) - [Linkedin](https://www.linkedin.com/in/marcello-rocha-381572231/) 
+Marcello Farias - [Linkedin](https://www.linkedin.com/in/marcello-rocha-381572231/) - [Instagram](https://www.instagram.com/cello.farias) 
