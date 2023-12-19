@@ -6,6 +6,8 @@ https://github.com/MarcelloFarias/github-profile-finder/assets/90793123/dc3c2105
 
 Github profile finder é um projeto simples, que permite o usuário buscar dados reais sobre perfis do github utilizando a [API do github](https://api.github.com).
 
+Você pode conferí-lo em: [](https://find-a-github-profile.netlify.app)
+
 # 👨‍💻 Tecnologias utilizadas
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
