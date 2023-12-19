@@ -42,7 +42,7 @@ npm install
 
 # 📜 Licença
 
-[![Licence](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)](./LICENSE)
+[![Licence](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)](./LICENSE) <br>
 Distribuído sob a licença MIT. Consulte `LICENSE` para obter mais informações.
 
 # 📫Contato
