@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <div className='footer'>
             <div className='text-field'>
-                <p>{`<Desevolvido com 💚 por Marcello Farias />`}</p>
+                <p>{`<Developed with 💚 by Marcello Farias />`}</p>
             </div>
             <div className='medias-field'>
                 <a href='https://github.com/MarcelloFarias'><FaGithub /></a>
