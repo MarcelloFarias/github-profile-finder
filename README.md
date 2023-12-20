@@ -34,7 +34,7 @@ Instale todas as dependências utilizando:
 npm install
 ```
 
-Depois basta é só rodar o projeto:
+Depois é só rodar o projeto:
 ```
 npm start
 ```
